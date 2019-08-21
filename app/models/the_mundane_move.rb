@@ -1,0 +1,2 @@
+class TheMundaneMove < ApplicationRecord
+end

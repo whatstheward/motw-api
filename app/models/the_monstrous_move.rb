@@ -1,0 +1,2 @@
+class TheMonstrousMove < ApplicationRecord
+end

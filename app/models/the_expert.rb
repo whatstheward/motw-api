@@ -1,0 +1,2 @@
+class TheExpert < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class TheFlakeMove < ApplicationRecord
+end

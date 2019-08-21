@@ -1,0 +1,2 @@
+class TheCrookedMove < ApplicationRecord
+end

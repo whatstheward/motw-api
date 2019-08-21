@@ -1,0 +1,2 @@
+class TheWrongedMove < ApplicationRecord
+end

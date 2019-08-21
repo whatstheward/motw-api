@@ -1,0 +1,2 @@
+class TheWronged < ApplicationRecord
+end

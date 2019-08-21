@@ -1,0 +1,2 @@
+class TheSpookyMove < ApplicationRecord
+end

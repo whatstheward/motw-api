@@ -1,0 +1,2 @@
+class TheDivine < ApplicationRecord
+end

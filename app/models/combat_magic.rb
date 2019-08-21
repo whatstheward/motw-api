@@ -1,0 +1,2 @@
+class CombatMagic < ApplicationRecord
+end

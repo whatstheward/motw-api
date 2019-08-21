@@ -1,0 +1,2 @@
+class TheMundane < ApplicationRecord
+end

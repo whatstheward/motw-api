@@ -1,0 +1,2 @@
+class TheProfessional < ApplicationRecord
+end

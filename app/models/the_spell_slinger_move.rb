@@ -1,0 +1,2 @@
+class TheSpellSlingerMove < ApplicationRecord
+end

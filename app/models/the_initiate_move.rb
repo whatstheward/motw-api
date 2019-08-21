@@ -1,0 +1,2 @@
+class TheInitiateMove < ApplicationRecord
+end

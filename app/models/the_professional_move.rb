@@ -1,0 +1,2 @@
+class TheProfessionalMove < ApplicationRecord
+end

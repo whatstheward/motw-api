@@ -1,0 +1,2 @@
+class TheSpellSlinger < ApplicationRecord
+end

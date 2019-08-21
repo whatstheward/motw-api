@@ -1,0 +1,2 @@
+class TheCrooked < ApplicationRecord
+end

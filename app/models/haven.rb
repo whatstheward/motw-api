@@ -1,0 +1,2 @@
+class Haven < ApplicationRecord
+end

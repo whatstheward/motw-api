@@ -1,0 +1,2 @@
+class TheDivineMove < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class TheMonstrou < ApplicationRecord
+end

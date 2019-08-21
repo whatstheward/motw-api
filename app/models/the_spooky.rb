@@ -1,0 +1,2 @@
+class TheSpooky < ApplicationRecord
+end

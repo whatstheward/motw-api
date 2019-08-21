@@ -1,0 +1,2 @@
+class TheFlake < ApplicationRecord
+end

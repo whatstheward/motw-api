@@ -1,0 +1,2 @@
+class TheExpertMove < ApplicationRecord
+end
