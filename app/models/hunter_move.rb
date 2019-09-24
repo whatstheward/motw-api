@@ -1,0 +1,2 @@
+class HunterMove < ApplicationRecord
+end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_21_154422) do
+ActiveRecord::Schema.define(version: 2019_08_29_192650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,17 @@ ActiveRecord::Schema.define(version: 2019_08_21_154422) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "hunter_moves", force: :cascade do |t|
+    t.string "name"
+    t.string "rating"
+    t.string "description"
+    t.string "partial_success"
+    t.string "total_success"
+    t.string "advanced_success"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "inventories", force: :cascade do |t|
     t.bigint "charactersheet_id"
     t.datetime "created_at", null: false
@@ -103,6 +114,14 @@ ActiveRecord::Schema.define(version: 2019_08_21_154422) do
   end
 
   create_table "parties", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "playbooks", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "fascimile"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
