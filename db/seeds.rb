@@ -8,7 +8,7 @@
 Playbook.destroy_all
 HunterMove.destroy_all
 
-Playbook.create([
+chosen, crooked, divine, expert, flake, initiate, monstrous, mundane, professional, spellslinger, spooky, wronged = Playbook.create([
     {
         name: "The Chosen",
         description: "Your birth was prophesied. You are the Chosen
@@ -195,9 +195,9 @@ HunterMove.create([
         <li>What was it going to do?</li>
         <li>What is being concealed here?</li>
         </ul>",
-        partial_success: "On a 7-9
+        partial_success: "<strong>On a 7-9</strong>
         hold 1.",
-        total_success: "On a 10+ hold 2.",
+        total_success: "<strong>On a 10+</strong> hold 2.",
         advanced_success: "Advanced: On a 12+, you may ask the
         Keeper any question you want about the
         mystery, not just the listed ones."
@@ -212,22 +212,23 @@ HunterMove.create([
         annoy them. They mark experience if they decide not to do what
         you asked. Monsters and minions
         cannot normally be manipulated.</em>",
-        partial_success: "<em>For a normal person-</em> <strong>On a 7-9</strong>: they’ll do it, but only if
+        partial_success: "<em><strong>For a normal person</strong>-</em> <strong>On a 7-9</strong>: they’ll do it, but only if
         you do something for them right
         now to show that you mean it. If
         you asked too much, they’ll tell
         you what, if anything, it would
         take for them to do it.
-        For another hunter:
+            </br>
+        <em><strong>For another hunter</strong></em> -
         On a 7-9, they mark experience if
         they do what you ask.",
-        total_success: "<em>For a normal person-</em>
+        total_success: "<em><strong>For a normal person</strong>-</em>
         <strong>On a 10+</strong>: they’ll do it for
         the reason you gave them. If you
         asked too much, they’ll tell you the
         minimum it would take for them
         to do it (or if there’s no way they’d
-        do it). <br/> <em>For another hunter</em>-
+        do it). <br/> <strong><em>For another hunter</em></strong>-
         <strong>On a 10+</strong>: if they do what you ask
         they mark experience and get +1
         forward",
@@ -236,6 +237,7 @@ HunterMove.create([
         they also become your ally for the
         rest of the mystery (or, if you do
         enough for them, permanently). 
+        </br>
         <em>For another hunter</em>
         <strong> On a 12+ </strong>they must
         act under pressure to resist your
@@ -348,5 +350,104 @@ HunterMove.create([
         issues: choose your effect.",
         advanced_success: "<strong>On a 12+</strong> the Keeper
         will offer you some added benefit."
-    }
+    },
+    {
+        playbook_id: chosen.id,
+        name: "Destiny's Plaything",
+        rating: "Weird",
+        description: "At the beginning of each mystery, roll +Weird to <strong>see what is revealed about your immediate future</strong>." ,
+        partial_success: "<strong>On a 7-9</strong> you get a vague hint about it. </br> <strong>On a miss</strong> something bad is going to happen to you." ,
+        total_success: "<strong>On a 10+</strong> - the Keeper will reveal a useful detail about the coming
+        mystery."
+    },
+    {
+        playbook_id: chosen.id,
+        name: "I'm Here For A Reason",
+        description: "There’s something you are destined to do. Work out the details with the Keeper, based on your fate. You cannot die until it comes to pass. <strong>If you die in play</strong>, then you must spend a Luck point. You will then, somehow, recover or be returned to life. Once your task is done (or you use up all your Luck), all bets are off.",
+    },
+    {
+        playbook_id: chosen.id,
+        name: "The Big Entrance",
+        rating: "Cool",
+        description: "When <strong>you make a showy entrance into a dangerous situation</strong>, roll +Cool.",
+        partial_success: "<strong>On a 7-9</strong>, you pick one person or monster to stop, watch and listen until you finish talking. </br><strong>On a miss</strong>, you’re marked as the biggest threat by all enemies who are present." ,
+        total_success: "<strong>On 10+</strong> everyone stops to watch and listen until you finish your opening speech.",
+    },
+    {
+        playbook_id: chosen.id,
+        name: "Devastating",
+        description: "When <strong>you inflict harm</strong>, you may inflict +1 harm."
+    },
+    {
+        playbook_id: chosen.id,
+        name: "Dutiful",
+        description: "When your fate rears its ugly head, and <strong>you act in accor-
+        dance with any of your fate tags</strong> (either heroic or doom) then
+        mark experience. If it’s a heroic tag, take +1 forward."
+    },
+    {
+        playbook_id: chosen.id,
+        name: "Invincible",
+        description: "You always count as having 2-armour. <em>This doesn’t
+        stack with other protection.</em>"
+    },
+    {
+        playbook_id: chosen.id,
+        name: "Resilience",
+        description: "You heal faster than normal people. Any time your
+        harm gets healed, heal an extra point. Additionally, your wounds count as 1-harm less for the purpose of the Keeper’s harm moves."
+    },
+    {
+        playbook_id: crooked.id,
+        name:  "Artifact",
+        description: "You ‘found’ a magical artifact with handy powers, and
+        kept it. Pick one: Protective amulet (1-armour magic recharge), Lucky charm (may be used as a Luck point, once only), Grimoire (studying the book gives +1 forward to use magic), Skeleton key (opens any magically sealed lock), Imp stone (A weak demon is bound to serve the holder. The imp must be summoned with the use magic move).",
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Crew",
+        description: "You have a regular crew, a team of three or four people who will help you out with pretty much anything. They count as a team (see page 119)."
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Deal with the Devil",
+        description: " You sold your soul to the Devil. Pick one or two things you got out of the deal: wealth, fame, youth, sensual gratification, skill (add +1 to two ratings). Payment is due either when you die, in six months (if you picked two things) or other- wise in a year."
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Friends on the Force",
+        rating: "Cool",
+        description: "You know a few cops who can be persuaded to look the other way, or do you a favour, for certain consider- ations. You can <strong>act under pressure</strong> to get in touch with them when you need to divert any law enforcement attention. There will be a cost, although maybe not right now."
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Made",
+        description: "You’re “made” in a gang. Name the gang and describe how their operations tie into your background. You can call on gang members to help you out, but they’ll expect to be paid. Your bosses will have requests for you now and again, but you’ll be paid. Minor trouble will be overlooked, but you better not screw over any other made gangsters."
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Driver",
+        description: "You have +1 ongoing while driving, plus you can hotwire anything (the older it is, the fewer tools you need to do it). You also own two handy, widely-available vehicles (perhaps a sports- car and a van).",
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Home Ground",
+        description: "Your crew made a point of keeping the locals happy - keeping them safe, ensuring things always went down okay. When you’re back in your old neighbourhood, you can always find people who will hide you or help you with a minor favour, no questions asked."
+    },
+    {
+        playbook_id: crooked.id,
+        name: "Notorious",
+        description: "You have a reputation from your criminal past. When <strong>you reveal who you are</strong>, your terrifying reputation counts as a reason for people to do what you ask, for the manipulate someone move. Revealing your identity to someone can create other problems later, of course."
+    },
+    {
+        playbook_id: crooked.id,
+        name: ,
+        rating: ,
+        description: ,
+        partial_success: ,
+        total_success: ,
+        advanced_success: 
+    },
 ])
+
+
