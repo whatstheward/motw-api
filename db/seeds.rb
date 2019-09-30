@@ -121,7 +121,6 @@ chosen, crooked, divine, expert, flake, initiate, monstrous, mundane, profession
 HunterMove.create([
     {
         name: "Kick Some Ass",
-        
         rating: "Tough",
         description: "When you get into a fight and kick some ass, roll +Tough.",
         partial_success: "<strong>On a 7+</strong>: you and whatever you’re
@@ -154,7 +153,6 @@ HunterMove.create([
     },
     {
         name: "Act Under Pressure",
-        
         rating: "Cool",
         description: "When you act under pressure, roll
         +Cool.",
@@ -170,7 +168,6 @@ HunterMove.create([
     },
     {
         name: "Help Out",
-        
         rating: "Cool",
         description: "When you help another hunter, roll
         +Cool.",
@@ -185,7 +182,6 @@ HunterMove.create([
     },
     {
         name: "Investigate A Mystery",
-        
         rating: "Sharp",
         description: "When you investigate a mystery, roll
         +Sharp. One hold can be spent to ask the
@@ -208,7 +204,6 @@ HunterMove.create([
     },
     {
         name: "Manipulate Someone",
-        
         rating: "Charm",
         description: "Once you have given them a reason, tell
         them what you want them to do and roll
@@ -237,7 +232,7 @@ HunterMove.create([
         <strong>On a 10+</strong>: if they do what you ask
         they mark experience and get +1
         forward",
-        advanced_success: "<em>For a normal person</em> - <strong> On a 12+</strong>: not only do
+        advanced_success: "<em>For a normal person</em><strong> On a 12+</strong>: not only do
         they do what you want right now,
         they also become your ally for the
         rest of the mystery (or, if you do
@@ -253,7 +248,6 @@ HunterMove.create([
     },
     {
         name: "Protect Someone",
-        
         rating: "Tough",
         description: "When you prevent harm to another
         character, roll +Tough.",
@@ -276,7 +270,6 @@ HunterMove.create([
     },
     {
         name: "Read A Bad Situation",
-        
         rating: "Sharp",
         description: "When you look around and read a bad
         situation, roll +Sharp. One hold can be spent to ask the
@@ -302,7 +295,6 @@ HunterMove.create([
     },
     {
         name: "Use Magic",
-        
         rating: "Weird",
         description: "When you use magic, say what you’re
         trying to achieve and how you do the
@@ -419,13 +411,13 @@ HunterMove.create([
     {
         playbook_id: crooked.id,
         name: "Deal with the Devil",
-        description: " You sold your soul to the Devil. Pick one or two things you got out of the deal: wealth, fame, youth, sensual gratification, skill (add +1 to two ratings). Payment is due either when you die, in six months (if you picked two things) or other- wise in a year."
+        description: " You sold your soul to the Devil. Pick one or two things you got out of the deal: wealth, fame, youth, sensual gratification, skill (add +1 to two ratings). Payment is due either when you die, in six months (if you picked two things) or otherwise in a year."
     },
     {
         playbook_id: crooked.id,
         name: "Friends on the Force",
         rating: "Cool",
-        description: "You know a few cops who can be persuaded to look the other way, or do you a favour, for certain consider- ations. You can <strong>act under pressure</strong> to get in touch with them when you need to divert any law enforcement attention. There will be a cost, although maybe not right now."
+        description: "You know a few cops who can be persuaded to look the other way, or do you a favour, for certain considerations. You can <strong>act under pressure</strong> to get in touch with them when you need to divert any law enforcement attention. There will be a cost, although maybe not right now."
     },
     {
         playbook_id: crooked.id,
@@ -435,12 +427,12 @@ HunterMove.create([
     {
         playbook_id: crooked.id,
         name: "Driver",
-        description: "You have +1 ongoing while driving, plus you can hotwire anything (the older it is, the fewer tools you need to do it). You also own two handy, widely-available vehicles (perhaps a sports- car and a van).",
+        description: "You have +1 ongoing while driving, plus you can hotwire anything (the older it is, the fewer tools you need to do it). You also own two handy, widely-available vehicles (perhaps a sportscar and a van).",
     },
     {
         playbook_id: crooked.id,
         name: "Home Ground",
-        description: "Your crew made a point of keeping the locals happy - keeping them safe, ensuring things always went down okay. When you’re back in your old neighbourhood, you can always find people who will hide you or help you with a minor favour, no questions asked."
+        description: "Your crew made a point of keeping the locals happy keeping them safe, ensuring things always went down okay. When you’re back in your old neighbourhood, you can always find people who will hide you or help you with a minor favour, no questions asked."
     },
     {
         playbook_id: crooked.id,
@@ -547,9 +539,155 @@ HunterMove.create([
         playbook_id: expert.id,
         name: "Dark Past",
         rating: "Weird",
-        description: "You dabbled in the worst sort of mystical arts before you became one of the good guys. If <strong>you trawl through your memories</strong> for something relevant to the case at hand, roll +Weird.",
-        partial_success: "On a 7-9 ask one. On a miss, you can ask a question anyway but that will mean you were personally complicit in creating the situation you are now dealing with. "
-    }
+        description: "You dabbled in the worst sort of mystical arts before you became one of the good guys. If <strong>you trawl through your memories</strong> for something relevant to the case at hand, roll +Weird. On a success, ask one or more questions from these questions:</br><ul>
+        <li>When I dealt with this creature (or one of its kind), what did I learn?</li>
+        <li>What black magic do I know that could help here?</li>
+        <li>Do I know anyone who might be behind this?</li>
+        <li>Who do I know who can help us right now?</li>
+        </ul>",
+        partial_success: "<strong>On a 7-9</strong>: ask one. </br><strong>On a miss</strong>: you can ask a question anyway but that will mean you were personally complicit in creating the situation you are now dealing with.",
+        total_success: "<strong>On a 10+</strong>: ask the Keeper two questions from the list below."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Connect the Dots",
+        rating: "Sharp",
+        description: "At the beginning of each mystery, if you look for the wider patterns that current events might be part of, roll +Sharp. Spend your hold during the mystery to ask the Keeper any one of the following
+        questions: </br>
+        <ul>
+        <li>Is this person connected to current events more than they are
+        saying?</li>
+        <li>When and where will the next critical event occur?</li>
+        <li>What does the monster want from this person?</li>
+        <li>Is this connected to previous mysteries we have investigated?</li>
+        <li>How does this mystery connect to the bigger picture?</li>
+        </ul>",
+        partial_success: "<strong>On a 7-9</strong>: hold 1",
+        total_success: "<strong>On a 10+</strong>: hold 3." 
+    },
+    {
+        playbook_id: flake.id,
+        name: "Crazy Eyes",
+        description: "You get +1 Weird (max +3)."
+    },
+    {
+        playbook_id: flake.id,
+        name: "See, It All Fits Together",
+        description: "You can use Sharp instead of Charm
+    when you <strong>manipulate someone</strong>."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Suspicious Mind",
+        description: "If someone lies to you, you know it."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Often Overlooked",
+        rating: "Weird",
+        description: "When <strong>you act all crazy</strong> to avoid something,
+        roll +Weird.",
+        partial_success: "<strong>On a 7-9</strong>: pick one: unthreatening or unimportant. </br><strong>On a miss</strong>: you draw lots (but not all) of the attention.",
+        total_success: "<strong>On a 10+</strong>: you’re regarded as unthreatening and unimportant."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Contrary",
+        description: "When <strong>you seek out and receive someone’s honest advice</strong> on the best course of action for you and then do something else instead, mark experience. If you do exactly the opposite of their advice, you also take +1 ongoing on any moves you make pursuing that course."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Net Friends",
+        rating: "Charm",
+        description: "You know a lot of people on the Internet. When <strong>you contact a net friend to help you</strong> with a mystery, roll +Charm.",
+        partial_success: "<strong>On a 7-9</strong>: they’re prepared to help, but it’s either going to take some time or you’re going to have to do part of it yourself. </br><strong>On a miss</strong>: you burn some bridges.",
+        total_success: "<strong>On a 10+</strong>: they’re available and helpful—they can fix something, break a code, hack a computer, or get you some special information."
+    },
+    {
+        playbook_id: flake.id,
+        name: "Sneaky",
+        description: "When you attack from ambush, or from behind, inflict +2 harm."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Good Standing",
+        rating: "Charm",
+        description: "When you <strong>are in good standing with your Sect, at the beginning of each mystery</strong>, roll +Charm.",
+        partial_success: "<strong>On a 7-9</strong> you get a mission associated with the mystery, and if you do it you’ll get some info or help too. </br><strong>On a miss</strong>: they ask you to do something bad. If you fail a mission or refuse an order, you’ll be in trouble with the Sect until you atone.",
+        total_success: "<strong>On a 10+</strong> they provide some useful info or help in the field."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Ancient Fighting Arts",
+        description: "When using an old-fashioned hand weapon, you inflict +1 harm and get +1 whenever you roll <strong>protect someone</strong>."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Mystic",
+        description: "Every time you successfully use magic, take +1 forward."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Fortunes",
+        rating: "Weird",
+        description: "The Sect has ancient prophecies or divination techniques to predict the future. Once per mystery, you may use them.
+        If you look at what the future holds, roll +Weird. On success take one more hold. Spend your hold to: </br>
+        <ul>
+        <li>have a useful object ready.</li>
+        <li>be somewhere you are needed, just in time.</li>
+        <li>take +1 forward, or give +1 forward to another hunter.</li>
+        <li>retroactively warn someone about an attack, so that it doesn’t
+        happen.</li>
+        </ul>",
+        partial_success: "<strong>On a 7-9</strong> hold 1",
+        total_success: "<strong>On a 10+</strong> hold 3"
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Sacred Oath",
+        rating: "Weird",
+        description: "You may bind yourself to a single goal, forsaking
+        something during your quest (e.g. speech, all sustenance but bread and water, alcohol, lying, sex, etc). Get the Keeper’s agreement on this—it should match the goal in importance and difficulty. While you keep your oath and work towards your goal, mark experience at the end of every session and get +1 on any rolls that directly help achieve the goal. If you break the oath, take -1 ongoing until you have atoned."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Mentor",
+        rating: "Sharp",
+        description: "You have a mentor in the Sect: name them. When you <strong>contact your mentor for info</strong>, roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: you choose: they’re either busy and can’t help, or they answer the question but you owe a favour. </br><strong>On a miss</strong>: your question causes trouble.",
+        total_success: "<strong>On a 10+</strong>: you get an answer to your question, no problem."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Apprentice",
+        description: "You have an apprentice: name them. Your job is to teach them the Sect’s ways. They count as an <strong>ally: subordinate</strong> (motivation: to follow your instructions to the letter)."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Helping Hand",
+        description: "When you successfully <strong>help out</strong> another hunter, they get +2 instead of the usual +1.",
+    },
+    {
+        playbook_id: initiate.id,
+        name: "That Old Black Magic",
+        description: "When you <strong>use magic</strong>, you can ask a question from the <strong>investigate a mystery</strong> move as your effect."
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Sacred Oath",
+        rating: "Weird",
+        description: ,
+        partial_success: ,
+        total_success: 
+    },
+    {
+        playbook_id: initiate.id,
+        name: "Sacred Oath",
+        rating: "Weird",
+        description: ,
+        partial_success: ,
+        total_success: 
+    },
 ])
 
 
