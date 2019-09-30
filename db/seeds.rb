@@ -121,6 +121,7 @@ chosen, crooked, divine, expert, flake, initiate, monstrous, mundane, profession
 HunterMove.create([
     {
         name: "Kick Some Ass",
+        
         rating: "Tough",
         description: "When you get into a fight and kick some ass, roll +Tough.",
         partial_success: "<strong>On a 7+</strong>: you and whatever you’re
@@ -153,6 +154,7 @@ HunterMove.create([
     },
     {
         name: "Act Under Pressure",
+        
         rating: "Cool",
         description: "When you act under pressure, roll
         +Cool.",
@@ -161,20 +163,21 @@ HunterMove.create([
         price to pay.
         advanced",
         total_success: "<strong>On a 10+</strong>: you do what you set out to.",
-        advanced_success: "<strong>On a 12+</strong> you may
+        advanced_success: "<strong>On a 12+</strong>: you may
         choose to either do what you wanted
         and something extra, or to do what you
         wanted to absolute perfection."
     },
     {
         name: "Help Out",
+        
         rating: "Cool",
         description: "When you help another hunter, roll
         +Cool.",
         partial_success: "<strong>On a 7-9</strong>: your help grants them +1 to
         their roll, but you also expose yourself
         to trouble or danger.",
-        total_success: "<strong>On a 10+</strong> your help grants them +1
+        total_success: "<strong>On a 10+</strong>: your help grants them +1
         to their roll.",
         advanced_success: "<strong>On a 12+</strong>: your help
         lets them act as if they just rolled a 12,
@@ -182,6 +185,7 @@ HunterMove.create([
     },
     {
         name: "Investigate A Mystery",
+        
         rating: "Sharp",
         description: "When you investigate a mystery, roll
         +Sharp. One hold can be spent to ask the
@@ -195,15 +199,16 @@ HunterMove.create([
         <li>What was it going to do?</li>
         <li>What is being concealed here?</li>
         </ul>",
-        partial_success: "<strong>On a 7-9</strong>
+        partial_success: "<strong>On a 7-9</strong>:
         hold 1.",
-        total_success: "<strong>On a 10+</strong> hold 2.",
+        total_success: "<strong>On a 10+</strong>: hold 2.",
         advanced_success: "Advanced: On a 12+, you may ask the
         Keeper any question you want about the
         mystery, not just the listed ones."
     },
     {
         name: "Manipulate Someone",
+        
         rating: "Charm",
         description: "Once you have given them a reason, tell
         them what you want them to do and roll
@@ -220,7 +225,7 @@ HunterMove.create([
         take for them to do it.
             </br>
         <em><strong>For another hunter</strong></em> -
-        On a 7-9, they mark experience if
+        <strong>On a 7-9</strong>: they mark experience if
         they do what you ask.",
         total_success: "<em><strong>For a normal person</strong>-</em>
         <strong>On a 10+</strong>: they’ll do it for
@@ -232,14 +237,14 @@ HunterMove.create([
         <strong>On a 10+</strong>: if they do what you ask
         they mark experience and get +1
         forward",
-        advanced_success: "<em>For a normal person</em> - <strong> On a 12+</strong> not only do
+        advanced_success: "<em>For a normal person</em> - <strong> On a 12+</strong>: not only do
         they do what you want right now,
         they also become your ally for the
         rest of the mystery (or, if you do
         enough for them, permanently). 
         </br>
         <em>For another hunter</em>
-        <strong> On a 12+ </strong>they must
+        <strong> On a 12+ </strong>:they must
         act under pressure to resist your
         request. If they do what you ask,
         they mark one experience and
@@ -248,6 +253,7 @@ HunterMove.create([
     },
     {
         name: "Protect Someone",
+        
         rating: "Tough",
         description: "When you prevent harm to another
         character, roll +Tough.",
@@ -270,6 +276,7 @@ HunterMove.create([
     },
     {
         name: "Read A Bad Situation",
+        
         rating: "Sharp",
         description: "When you look around and read a bad
         situation, roll +Sharp. One hold can be spent to ask the
@@ -286,19 +293,20 @@ HunterMove.create([
         </ul>
         If you act on the answers, you get +1
         ongoing while the information is relevant.",
-        partial_success: "<strong>On a 7-9</strong>
+        partial_success: "<strong>On a 7-9</strong>:
         hold 1.",
-        total_success: "<strong>On a 10+</strong> hold 3.",
-        advanced_success: "<strong>On a 12+</strong> you may ask
+        total_success: "<strong>On a 10+</strong>: hold 3.",
+        advanced_success: "<strong>On a 12+</strong>: you may ask
         the Keeper any question you want about
         the situation, not just the listed ones."
     },
     {
         name: "Use Magic",
+        
         rating: "Weird",
         description: "When you use magic, say what you’re
         trying to achieve and how you do the
-        spell, then roll +Weird. </br> <strong>Effects</strong>
+        spell, then roll +Weird. </br> <strong>Effects</strong>:
         <ul>
         <li>Inflict harm (1-harm ignorearmour magic obvious).</li>
         <li>Enchant a weapon. It gets +1 harm
@@ -320,7 +328,7 @@ HunterMove.create([
         cure a disease, or neutralize a
         poison.</li>
         </ul>
-        <strong>Glitches</strong>
+        <strong>Glitches</strong>:
         <ul>
         <li>The effect is weakened.</li>
         <li>The effect is of short duration.</li>
@@ -348,7 +356,7 @@ HunterMove.create([
         decide what effect the glitch has",
         total_success: "<strong>On a 10+</strong>: the magic works without
         issues: choose your effect.",
-        advanced_success: "<strong>On a 12+</strong> the Keeper
+        advanced_success: "<strong>On a 12+</strong>: the Keeper
         will offer you some added benefit."
     },
     {
@@ -356,8 +364,8 @@ HunterMove.create([
         name: "Destiny's Plaything",
         rating: "Weird",
         description: "At the beginning of each mystery, roll +Weird to <strong>see what is revealed about your immediate future</strong>." ,
-        partial_success: "<strong>On a 7-9</strong> you get a vague hint about it. </br> <strong>On a miss</strong> something bad is going to happen to you." ,
-        total_success: "<strong>On a 10+</strong> - the Keeper will reveal a useful detail about the coming
+        partial_success: "<strong>On a 7-9</strong>: you get a vague hint about it. </br> <strong>On a miss</strong>: something bad is going to happen to you." ,
+        total_success: "<strong>On a 10+</strong>: the Keeper will reveal a useful detail about the coming
         mystery."
     },
     {
@@ -370,8 +378,8 @@ HunterMove.create([
         name: "The Big Entrance",
         rating: "Cool",
         description: "When <strong>you make a showy entrance into a dangerous situation</strong>, roll +Cool.",
-        partial_success: "<strong>On a 7-9</strong>, you pick one person or monster to stop, watch and listen until you finish talking. </br><strong>On a miss</strong>, you’re marked as the biggest threat by all enemies who are present." ,
-        total_success: "<strong>On 10+</strong> everyone stops to watch and listen until you finish your opening speech.",
+        partial_success: "<strong>On a 7-9</strong>: you pick one person or monster to stop, watch and listen until you finish talking. </br><strong>On a miss</strong>: you’re marked as the biggest threat by all enemies who are present." ,
+        total_success: "<strong>On 10+</strong>: everyone stops to watch and listen until you finish your opening speech.",
     },
     {
         playbook_id: chosen.id,
@@ -440,14 +448,108 @@ HunterMove.create([
         description: "You have a reputation from your criminal past. When <strong>you reveal who you are</strong>, your terrifying reputation counts as a reason for people to do what you ask, for the manipulate someone move. Revealing your identity to someone can create other problems later, of course."
     },
     {
-        playbook_id: crooked.id,
-        name: ,
-        rating: ,
-        description: ,
-        partial_success: ,
-        total_success: ,
-        advanced_success: 
+        playbook_id: divine.id,
+        name: "Boss from Beyond",
+        rating: "Weird" ,
+        description: "At the beginning of each mystery, roll +Weird.",
+        partial_success: "<strong>On a 7-9</strong>: they ask you to do something complicated or difficult. In either case, you get to ask them one of the questions from the investigate a mystery move right now.</br> <strong>On a miss</strong>: you are required to do something terrible. If you do not accomplish what they’ve ordered, you cannot use this move again until you have
+        made up for your failure.",
+        total_success: "<strong>On a 10+</strong>: your Superiors ask you to do something simple."
     },
+    {
+        playbook_id: divine.id,
+        name: "Angel Wings",
+        rating: "Weird",
+        description: "You can go instantly to anywhere you’ve visited
+        before, or to a person you know well. When you carry one or two people with you, roll +Weird",
+        partial_success: "<strong>On a 7-9</strong>: you don’t quite manage it. Either you are all separated, or you all appear in the wrong place.",
+        total_success: "<strong>On a 10+</strong>: you all go where you wanted."
+    },
+    {
+        playbook_id: divine.id,
+        name: "What I Need, When I Need It",
+        description: " You may store any small object you own, putting it into a magical space nobody can get to. You may retrieve anything you stored at any time; it appears in your hand."
+    },
+    {
+        playbook_id: divine.id,
+        name: "Soothe",
+        description: "<strong>When you talk to someone for a few seconds in a quiet voice</strong>, you can calm them down, blocking any panic, anger, or other negative emotions they have. This works even if the thing that freaked them out is still present, as long as your voice can be heard.",
+    },
+    {
+        playbook_id: divine.id,
+        name: "Lay On Hands",
+        rating: "Cool",
+        description: "Your touch can heal injury and disease. When you lay your hands on someone hurt, roll +Cool.",
+        partial_success: "<strong>On a 7-9</strong>: you can heal the harm or illness as on a 10+, but you take it into yourself. </br><strong>On a miss</strong>: your aura causes them extra harm.",
+        total_success: " <strong>On a 10+</strong>: heal 2 harm or an illness, plus they’re stabilized."
+    },
+    {
+        playbook_id: divine.id,
+        name: "Cast Out Evil",
+        rating: "Tough",
+        description: "You may <strong>banish an unnatural creature from your presence</strong>",
+        partial_success: "<strong>On a 7-9</strong>: it takes a little while for the banishing to take effect—the creature has time to make one or two actions. Either way, the banished creature is unharmed, and you have no control over where it goes. This move may be used on unnatural hunters (e.g. the Monstrous). </br><strong>On a miss</strong>: something is keeping it here. That’s bad.",
+        total_success: "<strong>On a 10+</strong>: it is banished."
+    },
+    {
+        playbook_id: divine.id,
+        name: "Smite",
+        description: "Your body and divine weapon always count as a weakness against the monsters you fight. Your unarmed attacks are 2-harm intimate hand messy."
+    },
+    {
+        playbook_id: expert.id,
+        name: "I’ve Read About This Sort Of Thing",
+        rating: "Sharp",
+        description: "Roll +Sharp instead of +Cool when you <strong>act under pressure</strong>."
+    },
+    {
+        playbook_id: expert.id,
+        name: "Often Right",
+        description: "When a <strong>hunter comes to you for advice</strong> about a problem, give them your honest opinion and advice. If they take your advice, they get +1 ongoing while following your advice, and you mark experience." 
+    },
+    {
+        playbook_id: expert.id,
+        name: "Preparedness",
+        rating: "Sharp",
+        description: "When <strong>you need something unusual or rare</strong>, roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: you have it, but not here: it will take some time to get it. </br><strong>On a miss</strong>: you know
+        where it is, but it’s somewhere real bad.",
+        total_success: "<strong>On a 10+</strong>: you have it here right now" 
+    },
+    {
+        playbook_id: expert.id,
+        name: "It Wasn’t As Bad As It Looked",
+        rating: "Cool",
+        description: "Once per mystery, you may
+        attempt to keep going despite your injuries.",
+        partial_success: "<strong>On a 7-9</strong>: you may either stabilize or heal 1 harm. </br><strong>On a miss</strong> it was worse than it looked: the Keeper may inflict a harm move on you, or make your
+        wounds unstable.",
+        total_success: "<strong>On a 10+</strong>: heal 2 harm and stabilize your wounds"
+    },
+    {
+        playbook_id: expert.id,
+        name: "Precise Strike",
+        rating: "Tough",
+        description: "When you inflict harm on a monster, you can <strong>aim
+        for a weak spot</strong>.",
+        partial_success: "<strong>On a 7-9</strong>: you inflict +1 harm. </br><strong>On a miss</strong>: you leave yourself open for the monster to hit you.",
+        total_success: "<strong>On a 10+</strong>: you inflict +2 harm."
+    },
+    {
+        playbook_id: expert.id,
+        name: "The Woman (or Man) With The Plan",
+        rating: "Sharp",
+        description: "Spend the hold to be where you need to be, prepared and ready.",
+        partial_success: "<strong>On a 7-9</strong>: hold 1. </br><strong>On a miss</strong>: the Keeper holds 1 they can spend to have you be in the worst place, unprepared and unready.",
+        total_success: "<strong>On a 10+</strong>: hold 2"
+    },
+    {
+        playbook_id: expert.id,
+        name: "Dark Past",
+        rating: "Weird",
+        description: "You dabbled in the worst sort of mystical arts before you became one of the good guys. If <strong>you trawl through your memories</strong> for something relevant to the case at hand, roll +Weird.",
+        partial_success: "On a 7-9 ask one. On a miss, you can ask a question anyway but that will mean you were personally complicit in creating the situation you are now dealing with. "
+    }
 ])
 
 
