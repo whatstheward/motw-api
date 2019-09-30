@@ -748,7 +748,67 @@ HunterMove.create([
         description: "Take a move from a hunter playbook that is not currently in play."  
     },
     {
-        playbook_id: monstrous.id,
+        playbook_id: mundane.id,
+        name: "Always The Victim",
+        description: "When another hunter uses <strong>protect someone</strong> to protect you, they mark experience. Whenever a monster captures you, you mark experience.",
+    },
+    {
+        playbook_id: mundane.id,
+        name: "Oops!",
+        description: "If you want to <strong>stumble across something important</strong>, tell the Keeper. You will find something important and useful, although not necessarily related to your immediate problems."
+    },
+    {
+        playbook_id: mundane.id,
+        name: "Let’s Get Out Of Here!",
+        rating: "Charm",
+        description: "If you can <strong>protect someone</strong> by telling them what to do, or by leading them out, roll +Charm instead of
+        +Tough."
+    },
+    {
+        playbook_id: mundane.id,
+        name: "Panic Button",
+        rating: "Sharp",
+        description: "When you need to escape, <strong>name the route you’ll
+        try</strong> and roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: you can go or stay, but if you go it’s going to cost you (you leave something behind or something comes with you). </br><strong>On a miss</strong>: you are caught halfway out.",
+        total_success: "<strong>On a 10+</strong> you’re out of danger, no problem."
+    },
+    {
+        playbook_id: mundane.id,
+        name: "The Power of Heart",
+        description: "When fighting a monster, if you <strong>help someone</strong>, don’t roll +Cool. You automatically help as though you’d rolled a 10."
+    },
+    {
+        playbook_id: mundane.id,
+        name: "Trust Me",
+        rating: "Charm",
+        description: "When <strong>you tell a normal person the truth in order to protect them from danger</strong>, roll +Charm.",
+        partial_success: "<strong>On a 7-9</strong>: they do it, but the Keeper chooses one from:
+        </br>
+        <ul>
+        <li>They ask you a hard question first.</li> 
+        <li>They stall and dither a while.</li>
+        <li>They have a “better” idea.</li>
+        </br><strong>On a miss</strong>: they’re going to think you’re crazy and maybe danger-
+        ous too.",
+        total_success: "<strong>On a 10+</strong>: they’ll do what you say they should, no questions asked."
+    },
+    {
+        playbook_id: mundane.id,
+        name: "What Could Go Wrong?",
+        description: "Whenever you <strong>charge into immediate danger</strong> without hedging your bets, hold 2. You may spend your hold to:</br>
+        <ul>
+        <li>Inflict +1 harm.</li>
+        <li>Reduce someone’s harm suffered by 1.</li>
+        <li>Take +2 forward on an act under pressure roll.</li>"
+    },
+    {
+        playbook_id: mundane.id,
+        name: "Don’t Worry, I’ll Check It Out",
+        description: "Whenever <strong>you go off by yourself</strong> to check out somewhere (or something) scary, mark experience."
+    },
+    {
+        playbook_id: mundane.id,
         name: ,
         rating: ,
         description: ,
