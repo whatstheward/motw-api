@@ -673,17 +673,84 @@ HunterMove.create([
         description: "When you <strong>use magic</strong>, you can ask a question from the <strong>investigate a mystery</strong> move as your effect."
     },
     {
-        playbook_id: initiate.id,
-        name: "Sacred Oath",
-        rating: "Weird",
-        description: ,
-        partial_success: ,
-        total_success: 
+        playbook_id: monstrous.id,
+        name: "Immortal",
+        description: "You do not age or sicken, and whenever you suffer harm you suffer 1-harm less."
     },
     {
-        playbook_id: initiate.id,
-        name: "Sacred Oath",
+        playbook_id: monstrous.id,
+        name: "Immortal",
+        description: "You do not age or sicken, and whenever you suffer harm you suffer 1-harm less."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Unnatural Appeal",
         rating: "Weird",
+        description: "Roll +Weird instead of +Charm when you <strong>manipulate someone</strong>."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Unholy Strength",
+        rating: "Weird",
+        description: "Roll +Weird instead of +Tough when you <strong>kick some ass</strong>."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Incorporeal",
+        description: "You may move freely through solid objects (but not people)."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Preternatural Speed",
+        description: "You go much faster than normal people. <strong>When you chase, flee, or run</strong> take +1 ongoing." 
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Claws of the Beast",
+        description: "All your natural attacks get +1 harm."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Mental Dominion",
+        rating: "Charm",
+        description: "When you gaze into a normal human’s eyes
+        and <strong>exert your will over them</strong>, roll +Charm. On a success hold one or more. You may spend your hold to give them an order. Regular people will follow your order, whatever it is. Hunters can choose whether they do it or not. If they do, they mark experience.",
+        partial_success: "<strong>On a 7-9</strong>: hold 1.",
+        total_success: "<strong>On a 10+</strong>: hold 3."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Unquenchable Vitality",
+        rating: "Cool",
+        description: "When you have taken harm, you can heal yourself. Roll +Cool.",
+        partial_success: "<strong>On a 7-9</strong>: heal 1-harm and stabilise your injuries. </br><strong>On a miss</strong>: your injuries worsen.",
+        total_success: "<strong>On a 10+</strong>: heal 2-harm and stabilise your injuries."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Dark Negotiator",
+        description: "You can use the <strong>manipulate someone</strong> move on monsters as well as people, if they can reason and talk."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Flight",
+        description: "You can fly."
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Shapeshifter",
+        description: "You may change your form (usually into an animal).
+        Decide if you have just one alternate form or several, and detail them. You gain +1 to <strong>investigate a mystery</strong> when using an alternate form’s superior senses (e.g. smell for a wolf, sight for an eagle).",
+    },
+    {
+        playbook_id: monstrous.id,
+        name: "Something Borrowed",
+        description: "Take a move from a hunter playbook that is not currently in play."  
+    },
+    {
+        playbook_id: monstrous.id,
+        name: ,
+        rating: ,
         description: ,
         partial_success: ,
         total_success: 
