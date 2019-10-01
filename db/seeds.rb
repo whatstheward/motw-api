@@ -941,13 +941,132 @@ HunterMove.create([
         description: "When you read a bad situation, you can open up your third eye for a moment to take in extra information. Take +1 hold on any result of 7 or more, plus you can see invisible things. On a miss, you may still get 1 hold, but you’re exposed to super- natural danger. Unfiltered hidden reality is rough on the mind!" 
     },
     {
-        playbook_id: spellslinger.id,
-        name: ,
-        rating: ,
-        description: ,
-        partial_success: ,
-        total_success: 
+        playbook_id: spooky.id,
+        name: "Telepathy",
+        description: "You can read people’s thoughts and put words in their mind. This can allow you to <strong>investigate a mystery</strong> or <strong>read a bad situation</strong> without needing to actually talk. You can also manipulate someone without speaking. You still roll moves as normal, except people will not expect the weirdness of your mental com- munication."
     },
+    {
+        playbook_id: spooky.id,
+        name: "Hex",
+        description: "When you cast a spell (with <strong>use magic</strong>), as well as the normal effects, you may pick from the following:</br>
+        <ul>
+        <li>The target contracts a disease.</li>
+        <li>The target immediately suffers harm (2-harm magic ignore-armour).</li>
+        <li>The target breaks something precious or important.</li>
+        </ul>
+        ", 
+    },
+    {
+        playbook_id: spooky.id,
+        name: "The Sight",
+        description: "You can see the invisible, especially spirits and magical influences. You may communicate with (maybe even make deals with) the spirits you see, and they give you more opportunities to spot clues when you <strong>investigate a mystery</strong>."
+    },
+    {
+        playbook_id: spooky.id,
+        name: "Premonitions",
+        rating: "Weird",
+        description: "<strong>At the start of each mystery</strong>, roll +Weird.",
+        partial_success: "<strong>On a 7-9+</strong>: you get clouded images of something bad that is yet to happen: mark experience if you stop it. </br><strong>On a miss</strong>: you get a vision of something bad happening to you and the Keeper holds 3, to be spent one-for-one as penalties to rolls you make.",
+        total_success: "<strong>On a 10+</strong>: you get a detailed vision of something bad that is yet to happen. You take +1 forward to prevent it coming true, and mark experience if you stop it"
+    },
+    {
+        playbook_id: spooky.id,
+        name: "Hunches",
+        rating: "Sharp",
+        description: "<strong>When something bad is happening</strong> (or just about to happen) somewhere that you aren’t, roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: you get there late—in time to intervene, but not prevent it altogether. </br><strong>On a miss</strong>: you get there just in time to be in trouble yourself.",
+        total_success: "<strong>On a 10+</strong>: you knew where you needed to go, just in time to get there."
+    },
+    {
+        playbook_id: spooky.id,
+        name: "Tune In",
+        rating: "Weird",
+        description:"You can attune your mind to a monster or minion. Roll +Weird. On a success you may spend hold to ask the keeper one of the following questions, and gain +1 ongoing while acting on the answers:</br>
+        <ul>
+        <li>Where is the creature right now?</li>
+        <li>What is it planning to do right now?</li>
+        <li>Who is it going to attack next?</li>
+        <li>Who does it regard as the biggest threat?</li>
+        <li>How can I attract its attention?</li>
+        </ul>
+        " ,
+        partial_success: "<strong>On a 7-9</strong>: hold 1.",
+        total_success: "<strong>On a 10+</strong>: hold 3."
+    },
+    {
+        playbook_id: spooky.id,
+        name: "The Big Whammy",
+        rating: "Weird",
+        description: "You can use your powers to kick some ass: roll +Weird instead of +Tough. The attack has 2-harm close obvious ignore-armour. </br><strong>On a miss</strong>: you’ll get a magical backlash."
+    },
+    {
+        playbook_id: spooky.id,
+        name: "Jinx",
+        rating: "Weird",
+        description: "You can encourage coincidences to occur, the way you want. When you jinx a target, roll +Weird. On a success spend your hold to:</br>
+        <ul>
+        <li>Interfere with a hunter, giving them -1 forward.</li>
+        <li>Help a hunter, giving them +1 forward, by interfering with their enemy.</li>
+        <li>Interfere with what a monster, minion, or bystander is trying to do.</li>
+        <li>Inflict 1-harm on the target due to an accident.</li>
+        <li>The target finds something you left for them.</li>
+        <li>The target loses something that you will soon find.</li>
+        </ul>
+        ",
+        partial_success: "<strong>On a 7-9</strong> hold 1. </br><strong>On a miss</strong>: On a miss, the Keeper holds 2 over you to be used in the same way.",
+        total_success: "<strong>On a 10+</strong> hold 2."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "I Know My Prey",
+        description: "You get +1 ongoing when knowingly investigat- ing, pursuing or fighting the breed of monster that caused your loss."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "Berserk",
+        description: "No matter how much harm you take, you can always keep going until the current fight is over. During a fight, the Keeper may not use harm moves on you and you cannot die. When the fight ends, all harm takes effect as normal."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "NEVER AGAIN",
+        description: "In combat, you may choose to protect someone without rolling, as if you had rolled a 10+, but you may not choose to 'suffer little harm.'"
+    },
+    {
+        playbook_id: wronged.id,
+        name: "What Does Not Kill Me ",
+        description: "If you have suffered harm in a fight, you gain +1 ongoing until the fight is over."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "Fervor",
+        rating: "Tough",
+        description: "When you <strong>manipulate someone</strong>, roll +Tough instead of +Charm."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "Safety First",
+        description: "You have jury-rigged extra protection into your gear, giving you +1 armour (maximum 2-armour)." 
+    },
+    {
+        playbook_id: wronged.id,
+        name: "DIY Surgery",
+        rating: "Cool",
+        description: "When <strong>you do quick and dirty first aid on someone</strong> (including yourself), roll +Cool.",
+        partial_success: "<strong>On a 7-9</strong>: it counts as normal first aid, plus one of these, your choice:</br>
+        <ul>
+        <li>Stabilise the injury but the patient takes -1 forward.</li>
+        <li>Heal 1-harm and stabilise for now, but it will return as 2-harm
+        and become unstable again later.</li>
+        <li>Heal 1-harm and stabilise but the patient takes -1 ongoing
+        until it’s fixed properly.</li>
+        </ul>",
+        total_success: "<strong>On a 10+</strong>: it’s all good, it counts as normal first aid, plus stabilize the injury and heal 1 harm."
+    },
+    {
+        playbook_id: wronged.id,
+        name: "Tools Matter",
+        description: "With your signature weapon (see your gear, below), you get +1 to <strong>kick some ass</strong>."
+    }
 ])
 
 
