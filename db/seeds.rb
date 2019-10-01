@@ -808,7 +808,140 @@ HunterMove.create([
         description: "Whenever <strong>you go off by yourself</strong> to check out somewhere (or something) scary, mark experience."
     },
     {
-        playbook_id: mundane.id,
+        playbook_id: professional.id,
+        name: "Deal With Agency",
+        rating: "Sharp",
+        description: "When you deal with the Agency, requesting help or gear, or making excuses for a failure, roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: things aren’t so great. You might get chewed out by your superiors and there’ll be fallout, but you get what you need for the job. </br><strong>On a miss</strong>: you screwed up: you might be suspended or under investigation, or just in the doghouse. You certainly aren’t going to get any help until you sort it all out.",
+        total_success: "<strong>On a 10+</strong>: you’re good— your request for gear or personnel is okayed, or your slip-up goes unnoticed."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Bottle It Up",
+        description: "If you want, you can take up to +3 bonus when you <strong>act under pressure</strong>. For each +1 you use, the Keeper holds 1. That hold can be spent later—one for one—to give you -1 on any
+        move <em>except</em> <strong>act under pressure</strong>."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Unfazeable",
+        description: "Take +1 Cool (max +3)."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Battlefield Awareness",
+        description: "You always know what’s happening
+        around you, and what to watch out for. Take +1 armour (max
+        2-armour) on top of whatever you get from your gear."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Leave No One Behind",
+        rating: "Sharp",
+        description: "In combat, when <strong>you help someone
+        escape</strong>, roll +Sharp.",
+        partial_success: "<strong>On a 7-9</strong>: you can <em>either</em> get them out <em>or</em> suffer no harm, you choose. </br><strong>On a miss</strong>: you fail to get them out and you’ve attracted hostile atten- tion.",
+        total_success: "<strong>On a 10+</strong>: you get them out clean."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Tactical Genius",
+        rating: "Cool",
+        description: "When you <strong>read a bad situation</strong>, you may roll +Cool instead of +Sharp"
+    },
+    {
+        playbook_id: professional.id,
+        name: "Medic",
+        rating: "Cool",
+        description: "You have a full first aid kit, and the training to heal people. <strong>When you do first aid</strong>, roll +Cool.",
+        partial_success: "<strong>On a 7-9</strong>: choose one: heal 2 harm or stabilize the injury. </br><strong>On a miss</strong>: you cause an extra 1 harm. This move takes the place of regular first aid.",
+        total_success: "<strong>On a 10+</strong> the patient is stabilized and healed of 2 harm."
+    },
+    {
+        playbook_id: professional.id,
+        name: "Mobility",
+        description: "You have a truck, van, or car built for monster hunting. Choose two good things and one bad thing about it.</br>
+        <em>Good things</em>: roomy; surveillance gear; fast; stealthy; intim- idating; classic; medical kit; sleeping space; toolkit; concealed weapons; anonymous; armoured (+1 armour inside); tough; monster cage.
+        </br>
+        <em>Bad things</em>: loud; obvious; temperamental; beaten-up; gas- guzzler; uncomfortable; slow; old."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Tools and Techniques",
+        description: "In order to use your combat magic effec-
+        tively, you rely on a collection of tools and techniques. If you don’t
+        use them, there are drawbacks. Cross off one; you’ll need the rest.
+        </br>
+        <ul>
+        <li> <strong>Consumables</strong>: You need to have certain supplies— powders, oils, etc— on hand to cast your spell. They’re used up when you cast
+        the spell. If you don’t have them on hand, your body will be the
+        substitute: take 1-harm ignore-armour when you cast.</li>
+        <li><strong>Foci</strong>: You need wands, staves, and other somewhat obvious props to focus your efforts at their most powerful. If you don’t have
+        what you need on hand, your combat magic does 1 less harm.</li>
+        <li><strong>Gestures</strong>: You need to be able to wave your hands around obvi-
+        ously in order to use your combat magic. If you’re restrained in any way, you can still cast the spell but it’s more likely to go wrong; take -1 ongoing to your combat magic.</li>
+        <li><strong>Incantations</strong>: You must speak in an arcane language to control your magic without it filtering directly through your mind. If you use combat magic spell, successfully or failed, while unable or unwilling to speak, you must immediately act under pressure to avoid scrambling your thoughts—producing hallucinations, sensory deprivation, and general befuddlement.</li>
+        </ul>
+        "
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Advanced Arcane Training",
+        description: " If you have two of your three Tools
+        and Techniques at the ready, you may ignore the third one."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Arcane Reputation",
+        description: "Pick three big organizations or groups in the supernatural community, which can include some of the more sociable types of monsters. They’ve heard of you and respect your
+        power. With affected humans, take +1 forward when you <strong>manipulate</strong> them. You may <strong>manipulate</strong> affected monsters as if they were human, with no bonus."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Could’ve Been Worse",
+        description: "When you miss a use magic roll you can choose one of the following options instead of losing control of the magic:</br>
+        <ul>
+        <li><strong>Fizzle</strong>: The preparations and materials for the spell are ruined. You’ll have to start over from scratch with the prep time doubled.</li>
+        <li><strong>This Is Gonna Suck</strong>: The effect happens, but you trigger all of the listed glitches but one. You pick the one you avoid.</li>
+        </ul>
+        "
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Enchanted Clothing",
+        description: "Pick an article of every-day clothing–it’s enchanted without any change in appearance. Take -1 harm from any source that tries to get at you through the garment."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Forensic Divination",
+        description: "When you successfully <strong>investigate a mystery</strong>, you may ask “What magic was done here?” as a free extra question."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Go Big or Go Home",
+        description: "When you must <strong>use magic</strong> as a require- ment for Big Magic, take +1 ongoing to those <strong>use magic</strong> rolls."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Not My Fault",
+        description: "You get a +1 to <strong>act under pressure</strong> when you are dealing with the consequences of your own spellcasting."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Practitioner",
+        description: "Choose two effects available to you under <strong>use magic</strong>. Take +1 to <strong>use magic</strong> whenever you choose one of those effects."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Shield Spell",
+        description: "When you <strong>protect someone</strong>, gain 2-armour against any harm that is transferred to you. This doesn’t stack with your other armour, if any."
+    },
+    {
+        playbook_id: spellslinger.id,
+        name: "Third Eye",
+        description: "When you read a bad situation, you can open up your third eye for a moment to take in extra information. Take +1 hold on any result of 7 or more, plus you can see invisible things. On a miss, you may still get 1 hold, but you’re exposed to super- natural danger. Unfiltered hidden reality is rough on the mind!" 
+    },
+    {
+        playbook_id: spellslinger.id,
         name: ,
         rating: ,
         description: ,
